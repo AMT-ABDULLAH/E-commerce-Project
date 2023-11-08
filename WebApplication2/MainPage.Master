@@ -1,0 +1,45 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MainPage.master.cs" Inherits="WebApplication2.MainPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <table style="font-family: Arial">
+                <tr>
+                    <td colspan="2" style="width: 800px; height: 80px; text-align: center; background-color: #BDBDBD;">
+                        <h1>ABC Products
+                        </h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="height: 500px; background-color: #D8D8D8; width: 150px">
+                        <h3>Menu</h3>
+                        <a href="#">content1</a><br />
+                        <a href="#">content2</a><br />
+                        <a href="#">content3</a><br />
+                        <a href="#">content4</a><br />
+                    </td>
+                    <td style="height: 500px; background-color: #E6E6E6; width: 650px">
+                        <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                            <h1>Section that changes on a page by page basis</h1>
+                        </asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="background-color: #BDBDBD; text-align: center">
+                        <b>&copy; ABC & Co. Since 2000</b>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</body>
+</html>
